@@ -1,2 +1,2 @@
 # no-round-corners
-Personal static website .
+Personal static website.
