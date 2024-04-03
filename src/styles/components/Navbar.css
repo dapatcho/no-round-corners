@@ -1,4 +1,4 @@
-.nav-content a:not(:last-child)::after {
+.nav-content ul li:not(:last-child)::after {
   content: "-";
   margin: 0 5;
 }
