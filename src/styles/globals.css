@@ -21,6 +21,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Fira Code", monospace;
+  margin: 15px;
 }
 
 h1,

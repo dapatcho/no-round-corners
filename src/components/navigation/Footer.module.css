@@ -1,3 +1,29 @@
-.footer .tagline p {
-  font-size: 5rem;
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  height: 50px;
+}
+
+.footer p {
+  line-height: 0;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left {
+
+}
+
+.stripe {
+  background: var(--accent);
+  width: auto;
+  height: 20px;
+  margin: 0px;
 }
