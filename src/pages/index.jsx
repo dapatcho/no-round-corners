@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Navbar from "@/components/navigation/Navbar";
+
+import styles from "../styles/index.module.css"
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-4 `}
-    >
+    <div className={styles["body"]}>
       <p>
         Hey, I’m Michael (he/they), web developer and civil engineering
         graduate. Additionally, a radio show host, DIY music organizer,
@@ -20,6 +19,6 @@ export default function Home() {
         extremely familiar working with moving targets and a plethora of
         stakeholders, where I consistently turn over quality work.
       </p>
-    </main>
+    </div>
   );
 }
