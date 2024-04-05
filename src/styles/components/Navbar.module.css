@@ -3,17 +3,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0px;
+  padding: 1rem 0px;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+
+.navbar h2 {
+  padding: 0.5rem 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.header {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.toggle {
+  margin-left: auto;
+  padding-right: 3rem;
+}
+
+.title::before{
+  content: '';
+  width: 3rem; 
+  /* Width should be equal to the total left margin + padding of the toggle */
+  margin-right: auto;
+  display: block;
 }
 
 .content ul {
   display: flex;
   list-style-type: none;
-  margin: 10;
+  /* margin: 10px 0px 0px 0px; */
   padding: 0;
+  width: 100%;
 }
 
 .content ul li:not(:last-child)::after {
   content: "-";
-  margin: 0 5px;
+  margin: 0 15px;
 }
+

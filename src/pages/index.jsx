@@ -5,7 +5,7 @@ import styles from "../styles/index.module.css"
 
 export default function Home() {
   return (
-    <div className={styles["body"]}>
+    <div className="">
       <p>
         Hey, I’m Michael (he/they), web developer and civil engineering
         graduate. Additionally, a radio show host, DIY music organizer,

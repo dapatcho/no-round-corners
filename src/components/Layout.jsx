@@ -5,13 +5,13 @@ import Footer from "@/components/navigation/Footer";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="parent-div">
       <Navbar />
       <main>
-        <div className="main-content">{children}</div>
+        <div>{children}</div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

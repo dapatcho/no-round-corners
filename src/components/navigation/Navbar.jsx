@@ -1,14 +1,26 @@
 import React from "react";
-import styles from "../../styles/components/Navbar.module.css";
-
 import Link from "next/link";
+import Image from "next/image";
+import styles from "../../styles/components/Navbar.module.css";
+import autoprefixer from "autoprefixer";
 
 export default function Navbar() {
   return (
     <nav>
-      <div className={styles["navbar"]}>
+      <div className={styles.navbar}>
         <div className={styles["title"]}>
-          <h2>michael boulos</h2>
+          <div className={styles["header"]}>
+            <h2>michael boulos</h2>
+          </div>
+          <div className={styles["toggle"]}>
+            <Image src={"/sun.svg"} width={50} height={50} className="dark" />
+            <Image
+              src={"/moon-svgrepo-com 1.svg"}
+              width={50}
+              height={50}
+              className="light"
+            />
+          </div>
         </div>
         <div className={styles["content"]}>
           <ul>
