@@ -5,28 +5,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Fira+Sans:wght@100,400;700,900;800&display=swap");
 
 :root {
-  --foreground: #fdba31;
-  --background: #260052;
+  --foreground: #620097;
+  --background: #ede8e8;
   --accent: #f02;
 }
 
-[data-theme="light"] {
-  --foreground: #620097;
-  --background: #ede8e8;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #fdba31;
-    --background: #260052;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground: #620097;
-    --background: #ede8e8;
-  }
+[data-theme="dark"] {
+  --foreground: #fdba31;
+  --background: #260052;
+  --accent: #f02;
 }
 
 html {
@@ -43,6 +30,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+
+  transition: background-color 0.3s, color 0.3s;
 }
 
 h1,
@@ -67,10 +56,4 @@ main {
   flex-direction: column;
   min-height: 100vh;
   /* min-width: 100vw; */
-}
-
-/* ie anything "light" will not show in dark mode */
-/* ie anything "dark" will not show in light mode */
-.light {
-  display: none;
 }

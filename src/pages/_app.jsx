@@ -1,20 +1,16 @@
 import "@/styles/globals.css";
+import React, { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
-import useLocalStorage from "use-local-storage";
+import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }) {
-  
-  const defaultLight = window.matchMedia(
-    "(prefers-color-scheme: light)"
-  ).matches;
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    defaultLight ? "light" : "dark"
-  );
-
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <div>
+          <Component {...pageProps} />
+        </div>
+      </Layout>
+    </ThemeProvider>
   );
 }

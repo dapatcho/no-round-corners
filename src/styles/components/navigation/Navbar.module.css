@@ -32,12 +32,12 @@
 
 .toggle {
   margin-left: auto;
-  padding-right: 3rem;
+  padding-right: 1rem;
 }
 
-.title::before{
-  content: '';
-  width: 3rem; 
+.title::before {
+  content: "";
+  width: 3rem;
   /* Width should be equal to the total left margin + padding of the toggle */
   margin-right: auto;
   display: block;
@@ -54,5 +54,9 @@
 .content ul li:not(:last-child)::after {
   content: "-";
   margin: 0 15px;
+  color: var(--foreground);
 }
 
+.active {
+  color: var(--accent);
+}
