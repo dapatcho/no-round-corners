@@ -25,6 +25,7 @@ body {
   background: var(--background);
   font-family: "Fira Code", monospace;
   min-height: 100vh;
+  min-width: 100vw;
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 0;

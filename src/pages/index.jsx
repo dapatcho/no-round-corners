@@ -1,18 +1,20 @@
-import React from "react";
-import Image from "next/image";
-
 import styles from "../styles/pages/index.module.css";
+
+import BufferBar from "@/components/BufferBar";
+
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className={styles.content}>
       <p>
-        Hey, I’m Michael, web developer and civil engineering
-        graduate. Additionally, a radio show host, DIY music organizer,
-        performer, and graphic designer. I love music, have an obsession with
-        coffee, and clearly wear too many hats.
+        Hey, I’m Michael, web developer and civil engineering graduate.
+        Additionally, a radio show host, DIY music organizer, performer, and
+        graphic designer. I love music, have an obsession with coffee, and
+        clearly wear too many hats.
       </p>
-      <br/>
+      <BufferBar accentColor="var(--accent)" />
+      {/* <br/> */}
       <p>
         I am pursuing web dev work to better align my creative tendencies and
         work in faster paced and more engaging environments. I bring a wealth of

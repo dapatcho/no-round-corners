@@ -48,11 +48,15 @@ export default function Navbar() {
             <li className={isActive("/portfolio") ? styles.active : ""}>
               <Link href="/portfolio"> portfolio</Link>
             </li>
-            <li className={isActive("extracurriculars") ? styles.active : ""}>
+            <li className={isActive("/extracurriculars") ? styles.active : ""}>
               <Link href="/extracurriculars">extracurriculars</Link>
             </li>
             <li>
-              <Link href="https://drive.google.com/file/d/1brgbsz5AwMSB-pvRdVr99Hmjh7gcpy6p/view?usp=drive_link">
+              <Link
+                href="https://drive.google.com/file/d/1brgbsz5AwMSB-pvRdVr99Hmjh7gcpy6p/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 resume
               </Link>
             </li>
