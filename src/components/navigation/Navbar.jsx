@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/components/navigation/Navbar.module.css";
 import ThemeToggle from "../ThemeToggle";
@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   const isActive = (pathname) => router.pathname === pathname;
 
@@ -14,13 +15,32 @@ export default function Navbar() {
       <div className={styles.navbar}>
         <div className={styles["title"]}>
           <div className={styles["header"]}>
-            <h2>michael boulos</h2>
+            <Link href="/">
+              <h2>michael boulos</h2>
+            </Link>
           </div>
           <div className={styles["toggle"]}>
             <ThemeToggle />
           </div>
+          <div
+            className={`${styles.burger} ${
+              isNavExpanded ? styles.burgerMenuOpen : styles.burgerMenuClosed
+            }`}
+            onClick={() => setIsNavExpanded(!isNavExpanded)}
+          >
+            <div class="text-5xl">Ξ</div>
+          </div>
         </div>
-        <div className={styles["content"]}>
+        <div
+          className={`${styles.content} ${
+            isNavExpanded ? styles.expanded : ""
+          }`}
+        >
+          <div className={styles["toggle"]}>
+            <div className="flex justify-center pl-5">
+              <ThemeToggle />
+            </div>
+          </div>
           <ul>
             <li className={isActive("/") ? styles.active : ""}>
               <Link href="/">about</Link>

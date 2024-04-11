@@ -21,3 +21,20 @@
   height: 2rem;
   margin: 0px;
 }
+
+@media only screen and (max-width: 725px) {
+  .footer {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .footer {
+    text-align: center;
+  }
+  
+
+  .right p, .left p {
+  padding: 5px 0;
+  }
+}

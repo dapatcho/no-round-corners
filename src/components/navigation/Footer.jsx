@@ -8,7 +8,11 @@ function Footer() {
       <div className={styles["footer"]}>
         <div className={styles["right"]}>
           <div className={styles["linkedin"]}>
-            <Link href="https://www.linkedin.com/in/boulosm/">
+            <Link
+              href="https://www.linkedin.com/in/boulosm/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               linkedin: michael boulos
             </Link>
           </div>

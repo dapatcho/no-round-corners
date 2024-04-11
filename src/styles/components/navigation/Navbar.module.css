@@ -31,6 +31,8 @@
 }
 
 .toggle {
+  /* Check against its definition in ThemeToggle.jsx */
+  /* width: 100px;  */
   margin-left: auto;
   padding-right: 1rem;
 }
@@ -59,4 +61,82 @@
 
 .active {
   color: var(--accent);
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.title .toggle {
+  display: block;
+}
+
+.content .toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 725px) {
+  .content {
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+  }
+  
+  .expanded {
+    max-height: 1000px; /* Adjust based on actual content size */
+    opacity: 1;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+  }
+  
+
+  .content .toggle {
+    display: block;
+  }
+
+  .title .toggle {
+    display: none;
+    align-items: center;
+  }
+
+  .burger {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .burgerMenuClosed {
+    color: var(--foreground);
+    transition: 0.3s;
+  }
+
+  .burgerMenuOpen {
+    color: var(--accent);
+    transition: 0.3s;
+  }
+
+  .header {
+    /* display: block; */
+    width: auto;
+    padding-left: 20px;
+  }
+
+  .title::before {
+    display: none;
+  }
+
+  .content ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  .content ul li:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
 }
