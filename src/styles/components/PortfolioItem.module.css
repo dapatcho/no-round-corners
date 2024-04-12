@@ -1,18 +1,18 @@
 .PortfolioItem {
-  max-width: 75vw; /* Example max-width */
+  max-width: 65vw; /* Example max-width */
   margin: 10px auto; /* Center align the component */
   text-align: center; /* Center align the text */
 }
 
 .image {
-  width: 100%; /* Make the image responsive */
+  width: 60%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   display: none;
   padding: 1rem;
 }
 
 .lightModeImage {
-  display: block;
+  display: inline-block;
 }
 
 [data-theme="dark"] .lightModeImage {
@@ -20,7 +20,7 @@
 }
 
 [data-theme="dark"] .darkModeImage {
-  display: block;
+  display: inline-block;
 }
 
 .PortfolioItem p {
