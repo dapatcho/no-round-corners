@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../styles/components/navigation/Footer.module.css";
-import Link from "next/link";
 
 function Footer() {
   return (
@@ -8,13 +7,13 @@ function Footer() {
       <div className={styles["footer"]}>
         <div className={styles["right"]}>
           <div className={styles["linkedin"]}>
-            <Link
+            <a
               href="https://www.linkedin.com/in/boulosm/"
               target="_blank"
               rel="noopener noreferrer"
             >
               linkedin: michael boulos
-            </Link>
+            </a>
           </div>
           <div className={styles["email"]}>
             <p>boulosmk@gmail.com</p>

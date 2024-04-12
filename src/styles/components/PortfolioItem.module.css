@@ -26,3 +26,18 @@
 .PortfolioItem p {
   padding: 10px 0;
 }
+
+@media (max-width: 750px) {
+  .PortfolioItem {
+    max-width: 90vw; /* Example max-width */
+    margin: 10px auto; /* Center align the component */
+    text-align: center; /* Center align the text */
+  }
+  
+  .image {
+    width: 60%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: none;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+.ExtracurricularItem {
+  max-width: 65vw; /* Example max-width */
+  margin: 10px auto; /* Center align the component */
+  text-align: center; /* Center align the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 700px; 
+  max-height: 600px;
+  height: auto; 
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.PortfolioItem p {
+  padding: 10px 0;
+}
+
+@media (max-width: 750px) {
+  .PortfolioItem {
+    max-width: 90vw; /* Example max-width */
+    margin: 10px auto; /* Center align the component */
+    text-align: center; /* Center align the text */
+  }
+
+  .image {
+    height: auto; /* Maintain aspect ratio */
+    max-width: 90vw;
+    padding: 1rem;
+    flex-shrink: 0;
+  }
+}

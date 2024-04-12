@@ -9,7 +9,7 @@ export default function Home() {
     <div className={styles.parent}>
       <div className={styles.spacer}></div>
       <div className={styles.content}>
-        <p className="text-right">
+        <p className="">
           Hey, I’m Michael, web developer and civil engineering graduate.
           Additionally, a radio show host, DIY music organizer, performer, and
           graphic designer. I love music, have an obsession with coffee, and
