@@ -8,11 +8,11 @@ const BufferBar = ({ accentColor }) => {
   };
 
   const bufferStyle = {
-    width: "100px",
-    height: "15px",
+    width: "15rem",
+    height: "16px",
     backgroundColor: accentColor,
-    marginTop: "20px",
-    marginBottom: "20px",
+    marginTop: "30px",
+    marginBottom: "30px",
   };
 
   return (

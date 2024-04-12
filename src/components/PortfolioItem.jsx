@@ -1,13 +1,18 @@
-// Title with link
-// Image, if any
-// Body explaining the work done
+import React from "react";
 
-import React from 'react'
+import styles from "../styles/components/PortfolioItem.module.css";
 
-const PortfolioItem = () => {
+
+const PortfolioItem = ({ link, title, imgUrl, bodyText }) => {
   return (
-    <div>PortfolioItem</div>
-  )
-}
+    <div className={styles.PortfolioItem}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <h2>{title}</h2>
+      </a>
+      <img src={imgUrl} className={styles.image} />
+      <p>{bodyText}</p>
+    </div>
+  );
+};
 
-export default PortfolioItem
+export default PortfolioItem;

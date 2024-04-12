@@ -56,10 +56,12 @@
   content: "-";
   margin: 0 15px;
   color: var(--foreground);
+  font-weight: normal;
 }
 
 .active {
   color: var(--accent);
+  font-weight: bold;
 }
 
 .burger {
