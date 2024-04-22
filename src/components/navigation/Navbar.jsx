@@ -52,13 +52,14 @@ export default function Navbar() {
               <Link href="/extracurriculars">extracurriculars</Link>
             </li>
             <li>
-              <Link
-                href="https://drive.google.com/file/d/1brgbsz5AwMSB-pvRdVr99Hmjh7gcpy6p/view?usp=drive_link"
+              <a
+                href="/files/Michael Boulos - Web Dev.pdf"
+                alt="My Resume"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 resume
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
