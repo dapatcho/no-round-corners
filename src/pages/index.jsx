@@ -1,11 +1,11 @@
-import styles from "../styles/pages/index.module.css";
-
-import BufferBar from "@/components/BufferBar";
-
 import React from "react";
+
+import styles from "../styles/pages/index.module.css";
+import BufferBar from "@/components/BufferBar";
 
 export default function Home() {
   return (
+    
     <div className={styles.parent}>
       <div className={styles.spacer}></div>
       <div className={styles.content}>

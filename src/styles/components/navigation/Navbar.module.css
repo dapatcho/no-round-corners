@@ -23,7 +23,7 @@
 .header {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  padding-left: 3rem;
 }
 
 .header h2 {
@@ -34,15 +34,7 @@
   /* Check against its definition in ThemeToggle.jsx */
   /* width: 100px;  */
   margin-left: auto;
-  padding-right: 1rem;
-}
-
-.title::before {
-  content: "";
-  width: 3rem;
-  /* Width should be equal to the total left margin + padding of the toggle */
-  margin-right: auto;
-  display: block;
+  padding-right: 3rem;
 }
 
 .content ul {
@@ -57,6 +49,7 @@
   margin: 0 15px;
   color: var(--foreground);
   font-weight: normal;
+  transition: 0.3s;
 }
 
 .active {
@@ -101,6 +94,10 @@
     align-items: center;
   }
 
+  .toggle {
+    padding-right: 1rem;
+  }
+
   .burger {
     display: block;
     padding: 0px 20px 0 10px;
@@ -119,7 +116,8 @@
   .header {
     /* display: block; */
     width: auto;
-    padding-left: 20px;
+    justify-content: center;
+    padding-left: 3rem;
   }
 
   .title::before {
