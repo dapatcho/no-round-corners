@@ -17,7 +17,7 @@
 }
 
 html {
-  display: inline flex;
+  /* display: inline flex; */
 }
 
 body {
@@ -31,7 +31,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  transition: background-color 0.3s, color 0.3s;
+  transition: none;
+}
+
+body[data-theme-initialized] {
+  transition: background-color 0.5s, color 0.5s;
 }
 
 h1,
@@ -43,12 +47,14 @@ h6 {
   font-family: "Fira Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
+  
 }
 
 main {
   display: flex;
   flex-direction: column;
   flex: 1 1 0;
+
 }
 
 .parent-div {
@@ -74,4 +80,10 @@ main {
     font-size: 2.1rem;
     font-weight: 700;
   }
+}
+
+.disable-transitions *,
+.disable-transitions *::before,
+.disable-transitions *::after {
+  transition: none !important;
 }
