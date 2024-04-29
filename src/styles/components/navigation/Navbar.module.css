@@ -31,10 +31,21 @@
 }
 
 .toggle {
-  /* Check against its definition in ThemeToggle.jsx */
-  /* width: 100px;  */
   margin-left: auto;
   padding-right: 3rem;
+}
+
+.iconContainer {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.iconContainer .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .content ul {
@@ -70,7 +81,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 1000px) {
   .content {
     display: block;
     overflow: hidden;

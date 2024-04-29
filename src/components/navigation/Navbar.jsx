@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import styles from "../../styles/components/navigation/Navbar.module.css";
 import ThemeToggle from "../ThemeToggle";
@@ -7,12 +7,25 @@ import { useRouter } from "next/router";
 export default function Navbar() {
   const router = useRouter();
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const navbarRef = useRef(null);
 
   const isActive = (pathname) => router.pathname === pathname;
 
+  useEffect(() => {
+    function handleOutsideClick(event) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsNavExpanded(false);
+      }
+    }
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [navbarRef]);
+
   return (
     <nav>
-      <div className={styles.navbar}>
+      <div className={styles.navbar} ref={navbarRef}>
         <div className={styles["title"]}>
           <div className={styles["header"]}>
             <Link href="/">

@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import styles from "../styles/components/navigation/Navbar.module.css";
 
 const ThemeToggle = () => {
   const { theme, setTheme, resolvedTheme } = useTheme();
 
   // Determine the icon based on the resolved theme or the theme.
-  const [icon, setIcon] = useState("");
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   useEffect(() => {
-    const currentTheme = resolvedTheme || theme;
-
-    if (currentTheme) {
-      const iconPath = currentTheme === "dark" ? "/sun.svg" : "/moon.svg";
-      setIcon(iconPath);
-    }
+    setIsDarkTheme((resolvedTheme || theme) === "dark");
   }, [theme, resolvedTheme]);
 
   const toggleTheme = () => {
@@ -22,17 +18,19 @@ const ThemeToggle = () => {
     setTheme(newTheme);
   };
 
-  if (!icon) return null;
+  const sunIcon = "/sun.svg";
+  const moonIcon = "/moon.svg";
 
   return (
-    <div onClick={toggleTheme}>
-      <Image
-        src={icon}
-        width={50}
-        height={50}
-        alt="Toggle theme"
-        style={{ cursor: "pointer", transition: "opacity 0.3s" }}
-      />
+    <div onClick={toggleTheme} className={styles.themeToggle}>
+      <div className={styles.iconContainer}>
+        <div className={styles.icon} style={{ opacity: isDarkTheme ? 0 : 1 }}>
+          <Image src={moonIcon} width={50} height={50} alt="Sun icon" />
+        </div>
+        <div className={styles.icon} style={{ opacity: isDarkTheme ? 1 : 0 }}>
+          <Image src={sunIcon} width={50} height={50} alt="Moon icon" />
+        </div>
+      </div>
     </div>
   );
 };

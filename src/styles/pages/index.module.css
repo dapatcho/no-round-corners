@@ -1,6 +1,7 @@
 .parent {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   height: 60vh;
   padding: 100px 0;
@@ -11,19 +12,43 @@
   flex-direction: column;
   max-width: 85vw;
   flex: 1;
-  overflow-y: auto;
+  align-items: center;
+}
+
+.headshot img {
+  width: 300px;
+  height: auto;
 }
 
 @media (max-width: 1250px) {
   .parent {
-    display: inline-block;
+    /* display: inline-block; */
     align-items: center;
-
     padding: 10px 30px;
   }
 
   .content {
     display: inline-block;
     max-width: max-content;
+    justify-content: center;
+  }
+
+  .headshot img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .headshot img {
+    max-height: 25vh;
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .headshot img {
+    max-height: 15vh;
+    width: auto;
   }
 }

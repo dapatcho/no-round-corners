@@ -1,5 +1,5 @@
 .PortfolioItem {
-  max-width: 85vw; /* Example max-width */
+  max-width: 75vw; /* Example max-width */
   margin: 10px auto; /* Center align the component */
   text-align: center; /* Center align the text */
 }
