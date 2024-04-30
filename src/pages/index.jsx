@@ -14,15 +14,13 @@ export default function Home() {
           love music, have an obsession with coffee, and clearly wear too many
           hats.
         </p>
-        <div className={styles.headshot}>
-        <img
-          src="/Headshot.png"
-          alt="Headshot of Michael Boulos, web developer"
-
-        />
+        {/* <div className={styles.headshot}>
+          <img
+            src="/Headshot.png"
+            alt="Headshot of Michael Boulos, web developer"
+          />
+        </div> */}
       </div>
-      </div>
-
     </div>
   );
 }
