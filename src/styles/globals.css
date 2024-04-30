@@ -38,6 +38,13 @@ body[data-theme-initialized] {
   transition: background-color 0.5s, color 0.5s;
 }
 
+.disable-transitions *,
+.disable-transitions *::before,
+.disable-transitions *::after {
+  transition: none !important;
+}
+
+
 h1,
 h2,
 h3,
@@ -67,7 +74,7 @@ main {
 
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   body {
     font-size: 1.75rem;
     line-height: 2.5rem;
@@ -85,8 +92,21 @@ main {
   }
 }
 
-.disable-transitions *,
-.disable-transitions *::before,
-.disable-transitions *::after {
-  transition: none !important;
+
+@media only screen and (max-width: 450px) {
+  body {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
 }

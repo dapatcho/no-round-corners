@@ -26,15 +26,18 @@
 
 @media (max-width: 1250px) {
   .parent {
-    /* display: inline-block; */
-    align-items: center;
-    padding: 10px 30px;
+    padding: 0;
   }
 
   .content {
-    display: inline-block;
-    max-width: max-content;
-    justify-content: center;
+    flex-direction: row;
+    max-width: auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .blurb {
+    max-width: 85vw;
   }
 
   .headshot img {
@@ -44,10 +47,14 @@
 }
 
 @media (max-width: 600px) {
+
+
   .headshot img {
     max-height: 25vh;
     width: auto;
   }
+
+
 }
 
 @media (max-width: 450px) {
