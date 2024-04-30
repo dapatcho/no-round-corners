@@ -9,10 +9,14 @@
 
 .content {
   display: flex;
-  flex-direction: column;
-  max-width: 85vw;
+  flex-direction: row;
+  max-width: 95vw;
   flex: 1;
   align-items: center;
+}
+
+.blurb {
+  max-width: 65vw;
 }
 
 .headshot img {
