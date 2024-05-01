@@ -11,7 +11,7 @@ export default function portfolio() {
         link="https://www.civiconnect.ca/"
         imgUrlDark="/civi-dark.png"
         imgUrlLight="/civi-light.png"
-        bodyText={`-During my four month internship I was part of the three person team developing the redesigned Civiconnect website redesign from the ground up, making a dynamic and mobile friendly device with Node.js and Strapi CMS integration. \n -Component design, and responsive design, website looks engaging and is entirely functional on screen sizes ranging from 30” to 3”.\n-Work included extensive integration with Strapi CMS to provide the end users with autonomy and a practical means of maintaining and updating content throughout the site.`}
+        bodyText={`-During my four month internship I was part of the three person team developing the redesigned Civiconnect website redesign from the ground up, making a dynamic and mobile friendly device with Node.js and Strapi CMS integration. \n -Designed and implemented engaging and responsive website components which.\n-Components also had extensive integration with Strapi CMS to provide the end users with autonomy and a practical means of maintaining and updating content throughout the site.`}
       />{" "}
       <BufferBar accentColor="var(--accent)" />
       <PortfolioItem
