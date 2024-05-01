@@ -17,7 +17,7 @@ export default function portfolio() {
       <PortfolioItem
         title="mboulos.dev"
         link="https://mboulos.dev/"
-        bodyText="My personal website, designed from the ground up in Figma, written in HTML, CSS, and JavaScript using the React framework."
+        bodyText="My personal website, designed from the ground up in Figma, then written in HTML, CSS, and JavaScript using the React framework."
       />{" "}
     </div>
   );
