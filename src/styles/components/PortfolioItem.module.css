@@ -1,12 +1,16 @@
 .PortfolioItem {
-  max-width: 75vw; /* Example max-width */
-  margin: 10px auto; /* Center align the component */
-  text-align: left; /* Center align the text */
+  max-width: 75vw;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.PortfolioItem p {
+  text-align: left;
 }
 
 .image {
-  width: 60%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
+  width: 60%;
+  height: auto;
   display: none;
   padding: 1rem;
 }
