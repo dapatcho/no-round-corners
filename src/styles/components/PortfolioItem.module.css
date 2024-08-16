@@ -41,7 +41,6 @@
   .image {
     width: 60%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
-    display: none;
     padding: 1rem;
   }
 }
