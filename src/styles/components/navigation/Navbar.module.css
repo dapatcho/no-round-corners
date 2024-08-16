@@ -8,6 +8,12 @@
   width: 100%;
 }
 
+.navbar a:hover {
+  font-style: italic;
+  color: var(--accent);
+  transition: all 0.2s ease;
+}
+
 .navbar h2 {
   padding: 1rem 0px;
 }
