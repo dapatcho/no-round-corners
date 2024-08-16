@@ -66,7 +66,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/files/Michael Boulos - Web Dev.pdf"
+                href="/files/Michael Boulos - Resume.pdf"
                 alt="My Resume"
                 target="_blank"
                 rel="noopener noreferrer"
