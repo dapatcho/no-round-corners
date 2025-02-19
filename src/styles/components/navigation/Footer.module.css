@@ -8,6 +8,12 @@
   width: 100%;
 }
 
+.footer a:hover {
+  font-style: italic;
+  color: var(--accent);
+  /* transition: all 0.1s ease; */
+}
+
 .left,
 .right {
   display: flex;
@@ -32,9 +38,9 @@
   .footer {
     text-align: center;
   }
-  
 
-  .right p, .left p {
-  padding: 5px 0;
+  .right p,
+  .left p {
+    padding: 5px 0;
   }
 }

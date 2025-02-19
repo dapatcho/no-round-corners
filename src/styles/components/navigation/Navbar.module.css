@@ -11,7 +11,7 @@
 .navbar a:hover {
   font-style: italic;
   color: var(--accent);
-  transition: all 0.2s ease;
+  /* transition: all 0.1s ease; */
 }
 
 .navbar h2 {

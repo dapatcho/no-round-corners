@@ -16,7 +16,7 @@ function Footer() {
             </a>
           </div>
           <div className={styles["email"]}>
-            <p>boulosmk@gmail.com</p>
+            <a href="mailto:boulosmk@gmail.com">boulosmk@gmail.com</a>
           </div>
         </div>
         <div className={styles["left"]}>
